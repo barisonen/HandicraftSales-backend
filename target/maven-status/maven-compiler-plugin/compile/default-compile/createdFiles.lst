@@ -1,0 +1,7 @@
+com\example\accessingdatamongodb\entities\Customer.class
+com\example\accessingdatamongodb\AccessingDataMongodbApplication.class
+com\example\accessingdatamongodb\controllers\CustomerController.class
+com\example\accessingdatamongodb\repositories\ProductRepository.class
+com\example\accessingdatamongodb\controllers\ProductController.class
+com\example\accessingdatamongodb\repositories\CustomerRepository.class
+com\example\accessingdatamongodb\entities\Product.class
