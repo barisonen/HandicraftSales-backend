@@ -1,10 +1,7 @@
 package com.example.handicraftsales.repositories;
 
 import com.example.handicraftsales.entities.Product;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface ProductRepository extends MongoRepository<Product, String> {
-
-    Product findByName(String name);
-
+public interface ProductRepository extends CrudRepository<Product, Long> {
 }

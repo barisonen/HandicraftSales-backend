@@ -1,19 +1,16 @@
 package com.example.handicraftsales;
 
-import com.example.handicraftsales.entities.Customer;
 import com.example.handicraftsales.entities.Product;
-import com.example.handicraftsales.repositories.CustomerRepository;
 import com.example.handicraftsales.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HandicraftSalesApplication implements CommandLineRunner {
+public class HandicraftSalesApplication {
 
-	@Autowired
-	private CustomerRepository customerRepository;
+	//@Autowired
+	//private CustomerRepository customerRepository;
 
 	@Autowired
 	private ProductRepository productRepository;
@@ -22,9 +19,9 @@ public class HandicraftSalesApplication implements CommandLineRunner {
 		SpringApplication.run(HandicraftSalesApplication.class, args);
 	}
 
-	@Override
 	public void run(String... args) throws Exception {
 
+		/*
 		customerRepository.deleteAll();
 		productRepository.deleteAll();
 
@@ -59,6 +56,7 @@ public class HandicraftSalesApplication implements CommandLineRunner {
 		for(Product product : productRepository.findAll()) {
 			System.out.println(product);
 		}
+		*/
 	}
 
 }
