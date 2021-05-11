@@ -38,6 +38,8 @@ public class HandicraftSalesApplication implements CommandLineRunner {
 		}
 		System.out.println();
 
+		customerRepository.save(new Customer("deneme", "denemee", "denemeee"));
+
 
 	}
 

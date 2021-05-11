@@ -1,8 +1,9 @@
 package com.example.handicraftsales.entities;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-
+@Document(collection = "Customers")
 public class Customer {
 
     @Id

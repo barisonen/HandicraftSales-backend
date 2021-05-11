@@ -1,7 +1,7 @@
-com\example\accessingdatamongodb\entities\Customer.class
-com\example\accessingdatamongodb\controllers\CustomerController.class
-com\example\accessingdatamongodb\repositories\ProductRepository.class
-com\example\accessingdatamongodb\controllers\ProductController.class
-com\example\accessingdatamongodb\HandicraftSalesApplication.class
-com\example\accessingdatamongodb\repositories\CustomerRepository.class
-com\example\accessingdatamongodb\entities\Product.class
+com\example\handicraftsales\controllers\ProductController.class
+com\example\handicraftsales\entities\Product.class
+com\example\handicraftsales\controllers\CustomerController.class
+com\example\handicraftsales\HandicraftSalesApplication.class
+com\example\handicraftsales\entities\Customer.class
+com\example\handicraftsales\repositories\ProductRepository.class
+com\example\handicraftsales\repositories\CustomerRepository.class
