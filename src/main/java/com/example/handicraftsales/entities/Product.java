@@ -9,22 +9,18 @@ public class Product {
     public String name;
     public double price;
     public int stock;
-    private String shortDesc;
-    private String description;
-    private String converted;
 
 
 
     public Product() {}
 
-    public Product(String name, double price, int stock, String shortDesc) {
+    public Product(String name, double price, int stock) {
         this.name = name;
         this.price = price;
         this.stock = stock;
-        this.shortDesc = shortDesc;
     }
     @Override
     public String toString() {
-        return name + " - " + price + " - " + stock + " - " + shortDesc;
+        return "name: " + name + ", price: " + price + ", stock: " + stock;
     }
 }

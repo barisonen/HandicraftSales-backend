@@ -8,23 +8,21 @@ public class Customer {
     @Id
     public String id;
 
-    public String firstName;
-    public String lastName;
+    public String name;
+    public String password;
     public String email;
 
     public Customer() {}
 
-    public Customer(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Customer(String name, String password, String email) {
+        this.name = name;
+        this.password = password;
         this.email = email;
     }
 
     @Override
     public String toString() {
-        return String.format(
-                "Customer[id=%s, firstName='%s', lastName='%s']",
-                id, firstName, lastName);
+       return "name: " + name + ", email: " + email;
     }
 
 }

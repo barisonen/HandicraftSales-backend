@@ -1,7 +1,7 @@
 package com.example.handicraftsales.controllers;
 
 import com.example.handicraftsales.entities.Product;
-import com.example.handicraftsales.services.ProductService;
+import com.example.handicraftsales.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -11,16 +11,13 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
 
-    private ProductService productService;
-
-    public ProductController(ProductService productService) {
-        this.productService = productService;
-    }
+    @Autowired
+    private ProductRepository productRepository;
 
     @GetMapping
     public List<Product> getAllProducts() {
 
-        return productService.findAll();
+        return productRepository.findAll();
     }
 
 

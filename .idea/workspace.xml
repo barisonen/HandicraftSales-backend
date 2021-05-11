@@ -14,7 +14,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -28,6 +27,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -48,6 +48,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hobby programming\gs-accessing-data-mongodb\initial" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -60,7 +65,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandicraftSalesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="AccessingDataMongodbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="handicraftsales" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.handicraftsales.HandicraftSalesApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -77,8 +82,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620110301862</updated>
-      <workItem from="1620110303215" duration="3492000" />
-      <workItem from="1620113893828" duration="71000" />
+      <workItem from="1620110303215" duration="4150000" />
+      <workItem from="1620137466269" duration="80000" />
+      <workItem from="1620144095009" duration="36000" />
+      <workItem from="1620756869300" duration="199000" />
+      <workItem from="1620757079061" duration="50000" />
+      <workItem from="1620757143235" duration="3152000" />
     </task>
     <servers />
   </component>
