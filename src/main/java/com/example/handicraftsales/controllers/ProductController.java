@@ -24,7 +24,7 @@ public class ProductController {
 
         return productRepository.findAll();
     }
-
+/*
     @PatchMapping
     public HttpStatus createDefaultData() {
         List<Product> currentData = getAllProducts();
@@ -37,7 +37,7 @@ public class ProductController {
         }
         return HttpStatus.NOT_MODIFIED;
     }
-
+*/
     @DeleteMapping("/deleteAll")
     public HttpStatus deleteAll() {
         productRepository.deleteAll();
@@ -54,5 +54,11 @@ public class ProductController {
         else {
             return HttpStatus.NOT_MODIFIED;
         }
+    }
+
+    @PostMapping("/add/{product}")
+    public HttpStatus addProduct(@PathVariable Product product) {
+        productRepository.save(product);
+        return HttpStatus.OK;
     }
 }
