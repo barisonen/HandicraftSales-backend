@@ -56,8 +56,8 @@ public class ProductController {
         }
     }
 
-    @PostMapping("/add/{product}")
-    public HttpStatus addProduct(@PathVariable Product product) {
+    @PostMapping("/add")
+    public HttpStatus addProduct(@RequestBody Product product) {
         productRepository.save(product);
         return HttpStatus.OK;
     }
