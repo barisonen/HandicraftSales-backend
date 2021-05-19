@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba02aefb-2114-4f98-ba9a-0ce9d90f2eaa" name="Default Changelist" comment="Structural changes for frontend">
+    <list default="true" id="ba02aefb-2114-4f98-ba9a-0ce9d90f2eaa" name="Default Changelist" comment="Add function changed for backend">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_2_1_spec_2_0_1_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handicraftsales.iml" beforeDir="false" afterPath="$PROJECT_DIR$/handicraftsales.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/HandicraftSalesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/HandicraftSalesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/repositories/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/controllers/ProductController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/entities/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/repositories/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.handicraftsales.HandicraftSalesApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.handicraftsales.HandicraftSalesApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.handicraftsales.HandicraftSalesApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.handicraftsales.HandicraftSalesApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +106,8 @@
       <workItem from="1620760531138" duration="1921000" />
       <workItem from="1620841130719" duration="2224000" />
       <workItem from="1621187799487" duration="4495000" />
-      <workItem from="1621448920922" duration="1603000" />
+      <workItem from="1621448920922" duration="6078000" />
+      <workItem from="1621455082545" duration="876000" />
     </task>
     <task id="LOCAL-00001" summary="New request handlers added for Product and Customer Controllers.">
       <created>1621020688289</created>
@@ -111,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621194534154</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add function changed for backend">
+      <created>1621450856404</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621450856404</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New request handlers added for Product and Customer Controllers." />
     <MESSAGE value="Structural changes for frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structural changes for frontend" />
+    <MESSAGE value="Add function changed for backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add function changed for backend" />
   </component>
 </project>

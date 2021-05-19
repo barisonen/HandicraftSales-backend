@@ -1,64 +1,71 @@
 package com.example.handicraftsales.controllers;
 
-import com.example.handicraftsales.entities.Customer;
 import com.example.handicraftsales.entities.Product;
-import com.example.handicraftsales.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+
 
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 @RequestMapping("/products")
 public class ProductController {
 
+
     @Autowired
-    private ProductRepository productRepository;
+    private final MongoTemplate mongoTemplate;
+
+    public ProductController(MongoTemplate mongoTemplate) {
+        this.mongoTemplate = mongoTemplate;
+    }
 
     @GetMapping
     public List<Product> getAllProducts() {
 
-        return productRepository.findAll();
+        return mongoTemplate.findAll(Product.class, "Products");
     }
-/*
-    @PatchMapping
-    public HttpStatus createDefaultData() {
-        List<Product> currentData = getAllProducts();
-        if(currentData.isEmpty()) {
-            List<Product> newData = new ArrayList<>();
-            newData.add(new Product("Kolye", 100, 10));
-            newData.add(new Product("Yüzük", 150,5));
-            productRepository.saveAll(newData);
-            return HttpStatus.OK;
-        }
-        return HttpStatus.NOT_MODIFIED;
-    }
-*/
+
     @DeleteMapping("/deleteAll")
     public HttpStatus deleteAll() {
-        productRepository.deleteAll();
+
+        mongoTemplate.remove(new Query(), "Products");
         return HttpStatus.OK;
     }
 
     @DeleteMapping("/delete/{id}")
     public HttpStatus deleteById(@PathVariable String id) {
-        Optional<Product> c = productRepository.findById(id);
-        if(c.isPresent()) {
-            productRepository.deleteById(id);
-            return HttpStatus.OK;
-        }
-        else {
-            return HttpStatus.NOT_MODIFIED;
-        }
+
+        Query query = new Query(Criteria.where("_id").is(id));
+        mongoTemplate.remove(query, "Products");
+        return HttpStatus.OK;
     }
 
     @PostMapping("/add")
     public HttpStatus addProduct(@RequestBody Product product) {
-        productRepository.save(product);
+
+        mongoTemplate.insert(product);
         return HttpStatus.OK;
+    }
+
+
+    @PatchMapping("/setAmount/{id}/{newStock}")
+    public HttpStatus setAmount(@PathVariable String id, @PathVariable String newStock) {
+
+        Product theProduct = mongoTemplate.findById(id, Product.class);
+        int stock = theProduct.getStock();
+        if(stock < Integer.parseInt(newStock))
+            return HttpStatus.NOT_ACCEPTABLE;
+        else {
+            Update update = new Update();
+            update.set("stock", newStock);
+            mongoTemplate.updateFirst(new Query(Criteria.where("_id").is(id)), update, Product.class);
+            return HttpStatus.OK;
+        }
     }
 }
