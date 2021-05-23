@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba02aefb-2114-4f98-ba9a-0ce9d90f2eaa" name="Default Changelist" comment="Add function changed for backend">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_2_1_spec_2_0_1_Final.xml" afterDir="false" />
+    <list default="true" id="ba02aefb-2114-4f98-ba9a-0ce9d90f2eaa" name="Default Changelist" comment="Product repository deleted, instead, mongoTemplate added. &#10;&#10;All functions changed according to it, setAmount function added for frontend checkout section">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/SellerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/entities/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_2_1_spec_2_0_1_Final.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handicraftsales.iml" beforeDir="false" afterPath="$PROJECT_DIR$/handicraftsales.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/repositories/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/repositories/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/controllers/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/controllers/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/entities/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/repositories/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.handicraftsales.HandicraftSalesApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.handicraftsales.HandicraftSalesApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.handicraftsales.HandicraftSalesApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.handicraftsales.HandicraftSalesApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/handicraftsales/repositories/CustomerRepository.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.HandicraftSalesApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/console.sql" />
       <script-mode>FILE</script-mode>
@@ -107,7 +113,8 @@
       <workItem from="1620841130719" duration="2224000" />
       <workItem from="1621187799487" duration="4495000" />
       <workItem from="1621448920922" duration="6078000" />
-      <workItem from="1621455082545" duration="876000" />
+      <workItem from="1621455082545" duration="1108000" />
+      <workItem from="1621758251669" duration="4055000" />
     </task>
     <task id="LOCAL-00001" summary="New request handlers added for Product and Customer Controllers.">
       <created>1621020688289</created>
@@ -130,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621450856404</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Product repository deleted, instead, mongoTemplate added. &#10;&#10;All functions changed according to it, setAmount function added for frontend checkout section">
+      <created>1621456041490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621456041490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +166,7 @@
     <MESSAGE value="New request handlers added for Product and Customer Controllers." />
     <MESSAGE value="Structural changes for frontend" />
     <MESSAGE value="Add function changed for backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function changed for backend" />
+    <MESSAGE value="Product repository deleted, instead, mongoTemplate added. &#10;&#10;All functions changed according to it, setAmount function added for frontend checkout section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product repository deleted, instead, mongoTemplate added. &#10;&#10;All functions changed according to it, setAmount function added for frontend checkout section" />
   </component>
 </project>

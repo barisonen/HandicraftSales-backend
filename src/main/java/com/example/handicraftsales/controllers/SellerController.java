@@ -1,12 +1,10 @@
 package com.example.handicraftsales.controllers;
 
-import com.example.handicraftsales.entities.Customer;
-import com.example.handicraftsales.entities.Product;
+import com.example.handicraftsales.entities.Seller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,26 +12,26 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
-@RequestMapping("/customers")
-public class CustomerController {
+@RequestMapping("/sellers")
+public class SellerController {
 
     @Autowired
     private final MongoTemplate mongoTemplate;
 
-    public CustomerController(MongoTemplate mongoTemplate) {
+    public SellerController(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
     }
 
     @GetMapping
-    public List<Customer> getAllCustomers() {
+    public List<Seller> getAllSellers() {
 
-        return mongoTemplate.findAll(Customer.class, "Customers");
+        return mongoTemplate.findAll(Seller.class, "Sellers");
     }
 
     @DeleteMapping("/deleteAll")
     public HttpStatus deleteAll() {
 
-        mongoTemplate.remove(new Query(), "Customers");
+        mongoTemplate.remove(new Query(), "Sellers");
         return HttpStatus.OK;
     }
 
@@ -41,14 +39,14 @@ public class CustomerController {
     public HttpStatus deleteById(@PathVariable String id) {
 
         Query query = new Query(Criteria.where("_id").is(id));
-        mongoTemplate.remove(query, "Customers");
+        mongoTemplate.remove(query, "Sellers");
         return HttpStatus.OK;
     }
 
     @PostMapping("/add")
-    public HttpStatus addCustomer(@RequestBody Customer customer) {
+    public HttpStatus addSeller(@RequestBody Seller seller) {
 
-        mongoTemplate.insert(customer);
+        mongoTemplate.insert(seller);
         return HttpStatus.OK;
     }
 
