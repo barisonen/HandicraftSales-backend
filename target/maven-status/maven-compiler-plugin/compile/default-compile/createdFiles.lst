@@ -1,7 +1,8 @@
+com\example\handicraftsales\entities\Seller.class
 com\example\handicraftsales\controllers\ProductController.class
 com\example\handicraftsales\entities\Product.class
 com\example\handicraftsales\controllers\CustomerController.class
 com\example\handicraftsales\HandicraftSalesApplication$1.class
+com\example\handicraftsales\controllers\SellerController.class
 com\example\handicraftsales\HandicraftSalesApplication.class
 com\example\handicraftsales\entities\Customer.class
-com\example\handicraftsales\repositories\CustomerRepository.class

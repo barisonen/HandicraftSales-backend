@@ -1,6 +1,7 @@
-D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\repositories\CustomerRepository.java
 D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\entities\Customer.java
 D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\controllers\CustomerController.java
 D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\HandicraftSalesApplication.java
 D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\entities\Product.java
+D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\entities\Seller.java
 D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\controllers\ProductController.java
+D:\hobby programming\handicraftsales-backend\src\main\java\com\example\handicraftsales\controllers\SellerController.java
