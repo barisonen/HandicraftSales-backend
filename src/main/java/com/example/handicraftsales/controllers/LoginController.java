@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "https://handicraftsales-frontend.herokuapp.com", maxAge = 3600)
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("/login")
 
 public class LoginController {
 
-    @PostMapping("/login")
+    @PostMapping
     public HttpStatus login(@RequestBody String username, @RequestBody String password) {
         if("admin@example.com".equals(username) && "1234".equals(password)) {
             return HttpStatus.OK;
