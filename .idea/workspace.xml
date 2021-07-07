@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba02aefb-2114-4f98-ba9a-0ce9d90f2eaa" name="Default Changelist" comment="Customer section modified with mongoTemplate,&#10;Seller Model, Controller etc created">
+    <list default="true" id="ba02aefb-2114-4f98-ba9a-0ce9d90f2eaa" name="Default Changelist" comment="login mapping fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/handicraftsales-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.handicraftsales.HandicraftSalesApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.handicraftsales.HandicraftSalesApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.handicraftsales.HandicraftSalesApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.handicraftsales.HandicraftSalesApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/SellerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/handicraftsales/controllers/SellerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../el-sanatlari-satis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -103,7 +99,10 @@
       <workItem from="1621448920922" duration="6078000" />
       <workItem from="1621455082545" duration="1108000" />
       <workItem from="1621758251669" duration="4398000" />
-      <workItem from="1621796001602" duration="2482000" />
+      <workItem from="1621796001602" duration="3352000" />
+      <workItem from="1623598549904" duration="17000" />
+      <workItem from="1623598620661" duration="12000" />
+      <workItem from="1625686066259" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="New request handlers added for Product and Customer Controllers.">
       <created>1621020688289</created>
@@ -133,7 +132,42 @@
       <option name="project" value="LOCAL" />
       <updated>1621456041490</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created online mongo cloud cluster, and connected to it instead of local db">
+      <created>1621798684458</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621798684458</updated>
+    </task>
+    <task id="LOCAL-00006" summary="login controller added">
+      <created>1625686390799</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625686390799</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cross origin configured">
+      <created>1625686640267</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625686640267</updated>
+    </task>
+    <task id="LOCAL-00008" summary="cross origin configured 2">
+      <created>1625687316755</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1625687316755</updated>
+    </task>
+    <task id="LOCAL-00009" summary="login mapping fixed">
+      <created>1625687762935</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625687762935</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +191,11 @@
     <MESSAGE value="Add function changed for backend" />
     <MESSAGE value="Product repository deleted, instead, mongoTemplate added. &#10;&#10;All functions changed according to it, setAmount function added for frontend checkout section" />
     <MESSAGE value="Customer section modified with mongoTemplate,&#10;Seller Model, Controller etc created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customer section modified with mongoTemplate,&#10;Seller Model, Controller etc created" />
+    <MESSAGE value="Created online mongo cloud cluster, and connected to it instead of local db" />
+    <MESSAGE value="login controller added" />
+    <MESSAGE value="cross origin configured" />
+    <MESSAGE value="cross origin configured 2" />
+    <MESSAGE value="login mapping fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="login mapping fixed" />
   </component>
 </project>
