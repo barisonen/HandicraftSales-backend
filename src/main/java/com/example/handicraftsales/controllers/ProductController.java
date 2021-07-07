@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@CrossOrigin(origins = "https://handicraftsales-frontend.herokuapp.com/", maxAge = 3600)
+@CrossOrigin(origins = "https://handicraftsales-frontend.herokuapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/products")
 public class ProductController {

@@ -3,7 +3,7 @@ package com.example.handicraftsales.controllers;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "https://handicraftsales-frontend.herokuapp.com/", maxAge = 3600)
+@CrossOrigin(origins = "https://handicraftsales-frontend.herokuapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/customers")
 
